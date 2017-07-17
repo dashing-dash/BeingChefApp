@@ -133,14 +133,15 @@ tools:context=".MainActivity">
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/login_signup"
-        android:layout_marginTop="360dp"
-        android:layout_centerHorizontal="true" />
+        android:layout_marginTop="390dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="loginButtonHandler"/>
     <Button
         android:id="@+id/skip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/skip_login"
-        android:layout_marginTop="410dp"
+        android:layout_marginTop="440dp"
         android:layout_centerHorizontal="true"
         android:onClick="skipButtonHandler"/>
 

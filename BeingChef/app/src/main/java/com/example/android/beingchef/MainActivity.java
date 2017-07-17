@@ -204,6 +204,11 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, WelcomeActivity.class);
         startActivity(intent);
     }
+
+    public void loginButtonHandler(View view){
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
+    }
     /**
      * Creates an intent, adds location data to it as an extra, and starts the intent service for
      * fetching an address.

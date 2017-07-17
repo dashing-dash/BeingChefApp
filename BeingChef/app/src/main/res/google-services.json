@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "266054994445",
+    "firebase_url": "https://beingchef-66fc0.firebaseio.com",
+    "project_id": "beingchef-66fc0",
+    "storage_bucket": "beingchef-66fc0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:266054994445:android:96e428519a817165",
+        "android_client_info": {
+          "package_name": "com.example.android.beingchef"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "266054994445-afk2ih9o5i9gbtcp9mpituou0hbor764.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8EWaZcxOajhnWoya4pQD-b90WBuq6ET0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
