@@ -34,5 +34,19 @@
 
 
     <include layout="@layout/content_main"/>
+    <FrameLayout
+        android:id="@+id/contentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:layout_above="@+id/bottomBar" />
+
+    <com.roughike.bottombar.BottomBar
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        app:bb_tabXmlResource="@xml/bottombar_tabs" />
 
 </android.support.design.widget.CoordinatorLayout>

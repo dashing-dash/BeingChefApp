@@ -272,6 +272,8 @@ public class MainActivity extends AppCompatActivity {
      */
     private void displayAddressOutput() {
         mLocationAddressTextView.setText(mAddressOutput);
+        GlobalVariables gv=new GlobalVariables();
+        gv.setLocation(mAddressOutput);
     }
 
     /**

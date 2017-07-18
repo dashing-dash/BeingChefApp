@@ -1,7 +1,7 @@
 package com.example.android.beingchef;
 
 /**
- * Created by Pallav on 7/17/2017.
+ * Created by Pallav on 7/18/2017.
  */
 
 import android.content.Intent;
@@ -26,7 +26,7 @@ import com.synnapps.carouselview.ImageClickListener;
 import java.util.ArrayList;
 import java.util.List;
 
-public class WelcomeActivity extends AppCompatActivity {
+public class ItemListActivity extends AppCompatActivity {
     private List<Movie> movieList = new ArrayList<>();
     private RecyclerView recyclerView;
     private MoviesAdapter mAdapter;
@@ -39,19 +39,19 @@ public class WelcomeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_welcome);
+        setContentView(R.layout.activity_item_list);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        carouselView = (CarouselView) findViewById(R.id.carouselView);
-        carouselView.setPageCount(sampleImages.length);
-        carouselView.setImageListener(imageListener);
-        carouselView.setImageClickListener(new ImageClickListener() {
-            @Override
-            public void onClick(int position) {
-                Toast.makeText(WelcomeActivity.this, "Clicked item: "+ position, Toast.LENGTH_SHORT).show();
-            }
-        });
+//        carouselView = (CarouselView) findViewById(R.id.carouselView);
+//        carouselView.setPageCount(sampleImages.length);
+//        carouselView.setImageListener(imageListener);
+//        carouselView.setImageClickListener(new ImageClickListener() {
+//            @Override
+//            public void onClick(int position) {
+//                Toast.makeText(ItemListActivity.this, "Clicked item: "+ position, Toast.LENGTH_SHORT).show();
+//            }
+//        });
 
 
         BottomBar bottomBar = (BottomBar) findViewById(R.id.bottomBar);
@@ -60,17 +60,16 @@ public class WelcomeActivity extends AppCompatActivity {
             @Override
             public void onTabSelected(@IdRes int tabId) {
                 if (tabId == R.id.tab_account) {
-//                    Intent intent = new Intent(WelcomeActivity.this, AccountActivity.class);
+//                    Intent intent = new Intent(ItemListActivity.this, AccountActivity.class);
 //                    startActivity(intent);
                 }
                 else if (tabId == R.id.tab_favorites) {
-                    Intent intent = new Intent(WelcomeActivity.this, AddItemListActivity.class);
-                    startActivity(intent);
+                    Toast.makeText(ItemListActivity.this, "Clicked item: "+ tabId, Toast.LENGTH_SHORT).show();
                 }
                 else if (tabId == R.id.tab_location) {
-                    Toast.makeText(WelcomeActivity.this, "Clicked item: "+ new GlobalVariables().getLocation(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ItemListActivity.this, "Clicked item: "+ tabId, Toast.LENGTH_SHORT).show();
                 }else if (tabId == R.id.tab_cart) {
-                    Toast.makeText(WelcomeActivity.this, "Clicked item: "+ tabId, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ItemListActivity.this, "Clicked item: "+ tabId, Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -78,17 +77,16 @@ public class WelcomeActivity extends AppCompatActivity {
             @Override
             public void onTabReSelected(@IdRes int tabId) {
                 if (tabId == R.id.tab_account) {
-                    Intent intent = new Intent(WelcomeActivity.this, AccountActivity.class);
+                    Intent intent = new Intent(ItemListActivity.this, AccountActivity.class);
                     startActivity(intent);
                 }
                 else if (tabId == R.id.tab_favorites) {
-                    Intent intent = new Intent(WelcomeActivity.this, AddItemListActivity.class);
-                    startActivity(intent);
+                    Toast.makeText(ItemListActivity.this, "Clicked item: "+ tabId, Toast.LENGTH_SHORT).show();
                 }
                 else if (tabId == R.id.tab_location) {
-                    Toast.makeText(WelcomeActivity.this, "Clicked item: "+ new GlobalVariables().getLocation(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ItemListActivity.this, "Clicked item: "+ tabId, Toast.LENGTH_SHORT).show();
                 }else if (tabId == R.id.tab_cart) {
-                    Toast.makeText(WelcomeActivity.this, "Clicked item: "+ tabId, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ItemListActivity.this, "Clicked item: "+ tabId, Toast.LENGTH_SHORT).show();
                 }
             }
         });

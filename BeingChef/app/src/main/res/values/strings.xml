@@ -27,6 +27,8 @@
 
     <string name="action_sign_in_short">Register</string>
     <string name="email">Email</string>
+    <string name="name">Name</string>
+    <string name="action_save">Save</string>
     <string name="minimum_password">Password too short, enter minimum 6 characters!</string>
     <string name="auth_failed">Authentication failed, check your email and password or sign up</string>
     <string name="change_email">Change Email</string>
@@ -53,4 +55,8 @@
     <string name="btn_sign_out">Sign Out</string>
     <string name="lbl_forgot_password">Forgot password?</string>
     <string name="forgot_password_msg">We just need your registered Email Id to sent you password reset instructions.</string>
+    <string name="spinner_title">Choose Category</string>
+    <string name="desc">Description</string>
+    <string name="price">Price</string>
+    <string name="bought">Bought</string>
 </resources>
